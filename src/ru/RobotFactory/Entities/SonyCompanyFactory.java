@@ -10,32 +10,31 @@ public class SonyCompanyFactory extends Details {
 
     @Override
     public HeadDetails createHeadDetail(String headDetail) {
-        if ("Sony".equals(OrderReader.orderRead()))
         return null;
     }
 
     @Override
-    public Details.BodyDetails createBodyDetail() {
+    public BodyDetails createBodyDetail(String bodyDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftHandDetails createLeftHandDetail() {
+    public LeftHandDetails createLeftHandDetail(String leftHandDetail) {
         return null;
     }
 
     @Override
-    public Details.RightHandDetails createRightHandDetail() {
+    public RightHandDetails createRightHandDetail(String rightHandDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftLegDetails createLeftLegDetail() {
+    public LeftLegDetails createLeftLegDetail(String leftLegDetail) {
         return null;
     }
 
     @Override
-    public Details.RightLegDetails createRightLegDetail() {
+    public RightLegDetails createRightLegDetail(String rightLegDetail) {
         return null;
     }
 

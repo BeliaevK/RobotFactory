@@ -10,16 +10,10 @@ import java.io.IOException;
  */
 public class main {
     public static void main(String[] args) throws IOException {
-
-
-        System.out.println(SamsungCompanyFactory.BodyDetails);
         while (true) {
             Order order = OrderReader.orderRead();
         }
     }
 
-    public void createRobot (Details robot){
-        Details.HeadDetails headDetail = robot.;
 
-    }
 }

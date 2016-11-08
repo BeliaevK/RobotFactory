@@ -7,15 +7,15 @@ public abstract class Details {
 
     public abstract HeadDetails createHeadDetail(String headDetail);
 
-    public abstract BodyDetails createBodyDetail();
+    public abstract BodyDetails createBodyDetail(String bodyDetail);
 
-    public abstract LeftHandDetails createLeftHandDetail();
+    public abstract LeftHandDetails createLeftHandDetail(String leftHandDetail);
 
-    public abstract RightHandDetails createRightHandDetail();
+    public abstract RightHandDetails createRightHandDetail(String rightHandDetail);
 
-    public abstract LeftLegDetails createLeftLegDetail();
+    public abstract LeftLegDetails createLeftLegDetail(String leftLegDetail);
 
-    public abstract RightLegDetails createRightLegDetail();
+    public abstract RightLegDetails createRightLegDetail(String rightLegDetail);
 
     public interface HeadDetails {
         public void headDetail();

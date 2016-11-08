@@ -5,10 +5,6 @@ package ru.RobotFactory.Entities;
  */
 public class LGCompanyFactory extends Details {
 
-    @Override
-    public Details.HeadDetails createHeadDetail() {
-        return null;
-    }
 
     @Override
     public HeadDetails createHeadDetail(String headDetail) {
@@ -16,27 +12,27 @@ public class LGCompanyFactory extends Details {
     }
 
     @Override
-    public Details.BodyDetails createBodyDetail() {
+    public BodyDetails createBodyDetail(String bodyDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftHandDetails createLeftHandDetail() {
+    public LeftHandDetails createLeftHandDetail(String leftHandDetail) {
         return null;
     }
 
     @Override
-    public Details.RightHandDetails createRightHandDetail() {
+    public RightHandDetails createRightHandDetail(String rightHandDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftLegDetails createLeftLegDetail() {
+    public LeftLegDetails createLeftLegDetail(String leftLegDetail) {
         return null;
     }
 
     @Override
-    public Details.RightLegDetails createRightLegDetail() {
+    public RightLegDetails createRightLegDetail(String rightLegDetail) {
         return null;
     }
 

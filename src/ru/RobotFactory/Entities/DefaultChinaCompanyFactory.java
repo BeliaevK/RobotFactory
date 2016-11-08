@@ -5,34 +5,33 @@ package ru.RobotFactory.Entities;
  */
 public class DefaultChinaCompanyFactory extends Details {
 
-
     @Override
-    public HeadDetails createHeadDetail() {
+    public HeadDetails createHeadDetail(String headDetail) {
         return null;
     }
 
     @Override
-    public BodyDetails createBodyDetail() {
+    public BodyDetails createBodyDetail(String bodyDetail) {
         return null;
     }
 
     @Override
-    public LeftHandDetails createLeftHandDetail() {
+    public LeftHandDetails createLeftHandDetail(String leftHandDetail) {
         return null;
     }
 
     @Override
-    public RightHandDetails createRightHandDetail() {
+    public RightHandDetails createRightHandDetail(String rightHandDetail) {
         return null;
     }
 
     @Override
-    public LeftLegDetails createLeftLegDetail() {
+    public LeftLegDetails createLeftLegDetail(String leftLegDetail) {
         return null;
     }
 
     @Override
-    public RightLegDetails createRightLegDetail() {
+    public RightLegDetails createRightLegDetail(String rightLegDetail) {
         return null;
     }
 

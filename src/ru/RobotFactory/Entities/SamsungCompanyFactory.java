@@ -5,36 +5,33 @@ package ru.RobotFactory.Entities;
  */
 public class SamsungCompanyFactory extends Details {
 
-  /* Interfaces.BodyDetails s  = createBodyDetail();*/
-
-
     @Override
-    public Details.HeadDetails createHeadDetail() {
-        return new SamsungCompanyHead();
-    }
-
-    @Override
-    public Details.BodyDetails createBodyDetail() {
+    public HeadDetails createHeadDetail(String headDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftHandDetails createLeftHandDetail() {
+    public BodyDetails createBodyDetail(String bodyDetail) {
         return null;
     }
 
     @Override
-    public Details.RightHandDetails createRightHandDetail() {
+    public LeftHandDetails createLeftHandDetail(String leftHandDetail) {
         return null;
     }
 
     @Override
-    public Details.LeftLegDetails createLeftLegDetail() {
+    public RightHandDetails createRightHandDetail(String rightHandDetail) {
         return null;
     }
 
     @Override
-    public Details.RightLegDetails createRightLegDetail() {
+    public LeftLegDetails createLeftLegDetail(String leftLegDetail) {
+        return null;
+    }
+
+    @Override
+    public RightLegDetails createRightLegDetail(String rightLegDetail) {
         return null;
     }
 
