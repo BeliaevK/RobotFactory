@@ -68,4 +68,22 @@ public class Order {
     public void setRightLegDetail(String rightLegDetail) {
         this.rightLegDetail = rightLegDetail;
     }
+
+    @Override
+    public String toString() {
+        String orderCompany;
+       if (Integer.parseInt(this == toString(InterfaceDetail.COMPANY_DEFAULT))
+/*    @Override
+    public String toString() {
+        String orderedCar = (this.carReserver == null) ? ", машина не назначена" : ", " + this.carReserver.toString();
+        String orderedType;
+        if (this.needCarClass == Car.TYPE_OF_CLASS_BUSYNESS) orderedType = "Бизнес класс";
+        else if (this.needCarClass == Car.TYPE_OF_CLASS_ECONOMIC) orderedType = "Эконом класс";
+        else orderedType = "Не присвоен";
+        return "Пункт отправки: " + this.startPoint + ", конечная точка: " + this.endPoint + ", необходимо детское сидение: " + this.isNeedBabySeat + ", необходим салон для курящих: " + this.isNeedSmokeCar + ", класс машины: " + orderedType + orderedCar;
+    }*/
+}
+
+
+
 }
