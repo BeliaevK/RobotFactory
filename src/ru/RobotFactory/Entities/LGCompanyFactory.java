@@ -6,56 +6,85 @@ package ru.RobotFactory.Entities;
 public class LGCompanyFactory extends Details {
 
     @Override
-    public Interfaces.HeadDetails createHeadDetail() {
+    public Details.HeadDetails createHeadDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.BodyDetails createBodyDetail() {
+    public HeadDetails createHeadDetail(String headDetail) {
         return null;
     }
 
     @Override
-    public Interfaces.LeftHandDetails createLeftHandDetail() {
+    public Details.BodyDetails createBodyDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightHandDetails createRightHandDetail() {
+    public Details.LeftHandDetails createLeftHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftLegDetails createLeftLegDetail() {
+    public Details.RightHandDetails createRightHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightLegDetails createRightLegDetail() {
+    public Details.LeftLegDetails createLeftLegDetail() {
         return null;
     }
 
-    class LGCompanyHead implements Interfaces.HeadDetails {
-
+    @Override
+    public Details.RightLegDetails createRightLegDetail() {
+        return null;
     }
 
-    class LGCompanyBody implements Interfaces.BodyDetails {
+    class LGCompanyHead implements Details.HeadDetails {
 
+        @Override
+        public void headDetail() {
+
+        }
     }
 
-    class LGCompanyLeftHand implements Interfaces.LeftHandDetails {
+    class LGCompanyBody implements Details.BodyDetails {
 
+        @Override
+        public void bodyDetail() {
+
+        }
     }
 
-    class LGCompanyRightHand implements Interfaces.RightHandDetails {
+    class LGCompanyLeftHand implements Details.LeftHandDetails {
 
+        @Override
+        public void leftHandDetail() {
+
+        }
     }
 
-    class LGCompanyLeftLeg implements Interfaces.LeftLegDetails {
+    class LGCompanyRightHand implements Details.RightHandDetails {
 
+        @Override
+        public void rightHandDetail() {
+
+        }
     }
 
-    class LGCompanyRightLeg implements Interfaces.RightLegDetails {
+    class LGCompanyLeftLeg implements Details.LeftLegDetails {
 
+        @Override
+        public void leftLegDetail() {
+
+        }
+    }
+
+    class LGCompanyRightLeg implements Details.RightLegDetails {
+
+        @Override
+        public void rightLegDetail() {
+
+        }
     }
 }

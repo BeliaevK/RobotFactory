@@ -1,63 +1,91 @@
 package ru.RobotFactory.Entities;
 
 
+import ru.RobotFactory.Utilities.OrderReader;
+
 /**
  * Created by Scala on 05.11.2016.
  */
 public class SonyCompanyFactory extends Details {
 
     @Override
-    public Interfaces.HeadDetails createHeadDetail() {
+    public HeadDetails createHeadDetail(String headDetail) {
+        if ("Sony".equals(OrderReader.orderRead()))
         return null;
     }
 
     @Override
-    public Interfaces.BodyDetails createBodyDetail() {
+    public Details.BodyDetails createBodyDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftHandDetails createLeftHandDetail() {
+    public Details.LeftHandDetails createLeftHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightHandDetails createRightHandDetail() {
+    public Details.RightHandDetails createRightHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftLegDetails createLeftLegDetail() {
+    public Details.LeftLegDetails createLeftLegDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightLegDetails createRightLegDetail() {
+    public Details.RightLegDetails createRightLegDetail() {
         return null;
     }
 
-    class SonyCompanyHead implements Interfaces.HeadDetails {
+    class SonyCompanyHead implements Details.HeadDetails {
 
+
+        @Override
+        public void headDetail() {
+
+        }
     }
 
-    class SonyCompanyBody implements Interfaces.BodyDetails {
+    class SonyCompanyBody implements Details.BodyDetails {
 
+        @Override
+        public void bodyDetail() {
+
+        }
     }
 
-    class SonyCompanyLeftHand implements Interfaces.LeftHandDetails {
+    class SonyCompanyLeftHand implements Details.LeftHandDetails {
 
+        @Override
+        public void leftHandDetail() {
+
+        }
     }
 
-    class SonyCompanyRightHand implements Interfaces.RightHandDetails {
+    class SonyCompanyRightHand implements Details.RightHandDetails {
 
+        @Override
+        public void rightHandDetail() {
+
+        }
     }
 
-    class SonyCompanyLeftLeg implements Interfaces.LeftLegDetails {
+    class SonyCompanyLeftLeg implements Details.LeftLegDetails {
 
+        @Override
+        public void leftLegDetail() {
+
+        }
     }
 
-    class SonyCompanyRightLeg implements Interfaces.RightLegDetails {
+    class SonyCompanyRightLeg implements Details.RightLegDetails {
 
+        @Override
+        public void rightLegDetail() {
+
+        }
     }
 
 }

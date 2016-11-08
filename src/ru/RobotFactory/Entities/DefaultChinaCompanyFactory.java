@@ -4,57 +4,82 @@ package ru.RobotFactory.Entities;
  * Created by Scala on 05.11.2016.
  */
 public class DefaultChinaCompanyFactory extends Details {
+
+
     @Override
-    public Interfaces.HeadDetails createHeadDetail() {
+    public HeadDetails createHeadDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.BodyDetails createBodyDetail() {
+    public BodyDetails createBodyDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftHandDetails createLeftHandDetail() {
+    public LeftHandDetails createLeftHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightHandDetails createRightHandDetail() {
+    public RightHandDetails createRightHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftLegDetails createLeftLegDetail() {
+    public LeftLegDetails createLeftLegDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightLegDetails createRightLegDetail() {
+    public RightLegDetails createRightLegDetail() {
         return null;
     }
 
-    class DefaultChinaCompanyHead implements Interfaces.HeadDetails {
+    class DefaultChinaCompanyHead implements Details.HeadDetails {
 
+        @Override
+        public void headDetail() {
+        }
     }
 
-    class DefaultChinaCompanyBody implements Interfaces.BodyDetails {
+    class DefaultChinaCompanyBody implements Details.BodyDetails {
 
+        @Override
+        public void bodyDetail() {
+
+        }
     }
 
-    class DefaultChinaCompanyLeftHand implements Interfaces.LeftHandDetails {
+    class DefaultChinaCompanyLeftHand implements Details.LeftHandDetails {
 
+        @Override
+        public void leftHandDetail() {
+
+        }
     }
 
-    class DefaultChinaCompanyRightHand implements Interfaces.RightHandDetails {
+    class DefaultChinaCompanyRightHand implements Details.RightHandDetails {
 
+        @Override
+        public void rightHandDetail() {
+
+        }
     }
 
-    class DefaultChinaCompanyLeftLeg implements Interfaces.LeftLegDetails {
+    class DefaultChinaCompanyLeftLeg implements Details.LeftLegDetails {
 
+        @Override
+        public void leftLegDetail() {
+
+        }
     }
 
-    class DefaultChinaCompanyRightLeg implements Interfaces.RightLegDetails {
+    class DefaultChinaCompanyRightLeg implements Details.RightLegDetails {
 
+        @Override
+        public void rightLegDetail() {
+
+        }
     }
 }

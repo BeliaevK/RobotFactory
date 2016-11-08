@@ -5,64 +5,88 @@ package ru.RobotFactory.Entities;
  */
 public class SamsungCompanyFactory extends Details {
 
+  /* Interfaces.BodyDetails s  = createBodyDetail();*/
+
+
     @Override
-    public Interfaces.HeadDetails createHeadDetail() {
-        return new SamsungCompanyHead("1");
+    public Details.HeadDetails createHeadDetail() {
+        return new SamsungCompanyHead();
     }
 
     @Override
-    public Interfaces.BodyDetails createBodyDetail() {
-        return new SamsungCompanyBody("1");
-    }
-
-    @Override
-    public Interfaces.LeftHandDetails createLeftHandDetail() {
+    public Details.BodyDetails createBodyDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightHandDetails createRightHandDetail() {
+    public Details.LeftHandDetails createLeftHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.LeftLegDetails createLeftLegDetail() {
+    public Details.RightHandDetails createRightHandDetail() {
         return null;
     }
 
     @Override
-    public Interfaces.RightLegDetails createRightLegDetail() {
+    public Details.LeftLegDetails createLeftLegDetail() {
         return null;
     }
 
-    private class SamsungCompanyHead implements Interfaces.HeadDetails {
-
-        public SamsungCompanyHead(String s) {
-        }
-
-
+    @Override
+    public Details.RightLegDetails createRightLegDetail() {
+        return null;
     }
 
-    class SamsungCompanyBody implements Interfaces.BodyDetails {
+    class SamsungCompanyHead implements Details.HeadDetails {
 
-        public SamsungCompanyBody(String s) {
+        @Override
+        public void headDetail() {
+
         }
     }
 
-    class SamsungCompanyLeftHand implements Interfaces.LeftHandDetails {
+    class SamsungCompanyBody implements Details.BodyDetails {
 
+        @Override
+        public void bodyDetail() {
+
+        }
     }
 
-    class SamsungCompanyRightHand implements Interfaces.RightHandDetails {
+    class SamsungCompanyLeftHand implements Details.LeftHandDetails {
 
+
+        @Override
+        public void leftHandDetail() {
+
+        }
     }
 
-    class SamsungCompanyLeftLeg implements Interfaces.LeftLegDetails {
+    class SamsungCompanyRightHand implements Details.RightHandDetails {
 
+        @Override
+        public void rightHandDetail() {
+
+        }
     }
 
-    class SamsungCompanyRightLeg implements Interfaces.RightLegDetails {
+    class SamsungCompanyLeftLeg implements Details.LeftLegDetails {
 
+
+        @Override
+        public void leftLegDetail() {
+
+        }
+    }
+
+    class SamsungCompanyRightLeg implements Details.RightLegDetails {
+
+
+        @Override
+        public void rightLegDetail() {
+
+        }
     }
 
 }

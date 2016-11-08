@@ -1,6 +1,6 @@
 package ru.RobotFactory;
 
-import ru.RobotFactory.Entities.Order;
+import ru.RobotFactory.Entities.*;
 import ru.RobotFactory.Utilities.OrderReader;
 
 import java.io.IOException;
@@ -10,8 +10,16 @@ import java.io.IOException;
  */
 public class main {
     public static void main(String[] args) throws IOException {
+
+
+        System.out.println(SamsungCompanyFactory.BodyDetails);
         while (true) {
             Order order = OrderReader.orderRead();
         }
+    }
+
+    public void createRobot (Details robot){
+        Details.HeadDetails headDetail = robot.;
+
     }
 }

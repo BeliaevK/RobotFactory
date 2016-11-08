@@ -28,7 +28,7 @@ public class OrderReader {
             String orderText = reader.readLine();
             String[] orderFields = orderText.split("\\|");
             if (checkOrderFieldsIsCorrect(orderFields)) {
-                    if (orderFields.length == 5) order = new Order(orderFields[0], orderFields[1], orderFields[2],
+                    if (orderFields.length == 6) order = new Order(orderFields[0], orderFields[1], orderFields[2],
                             orderFields[3], orderFields[4], orderFields[5]);
             } else {
                 System.out.println("Неверный формат заявки. Укажите фирму призводителя деталей работа: 'Голова|Тело|"
