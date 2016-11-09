@@ -20,25 +20,21 @@ public class CreateRobot {
     static void testing (InterfaceDetail i) {
         i.test();
     }
+
     static void testingAll (InterfaceDetail[] e){
             for (InterfaceDetail i : e)
                 testing(i);
         }
 
-
     public static void main(String[] args) throws IOException {
         while (true) {
+
             Order order = OrderReader.orderRead();
 
             InterfaceDetail[] i = {
                     new RobotHead(), new RobotBody(), new RobotLeftHand(), new RobotRightHand(), new RobotLeftLeg(), new RobotRightLeg()
             };
-/*            for (int i = 0; i < ; i++) {
-                testing(order[i]);
-                }
-            }*/
-/*            testing();
-            testing(order);*/
+
             System.out.println(order);
             testingAll(i);
         }
