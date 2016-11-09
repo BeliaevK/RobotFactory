@@ -13,7 +13,7 @@ public class OrderReader {
 
     private static OrderReader instance;
 
-    public static synchronized OrderReader orderReader() {
+    public static  OrderReader getInstance() {
         if (instance == null) {
             instance = new OrderReader();
         }
@@ -28,12 +28,17 @@ public class OrderReader {
             String orderText = reader.readLine();
             String[] orderFields = orderText.split("\\|");
             if (checkOrderFieldsIsCorrect(orderFields)) {
-                    if (orderFields.length == 6) order = new Order(orderFields[0], orderFields[1], orderFields[2],
-                            orderFields[3], orderFields[4], orderFields[5]);
+            int[]intOrderFields = new int[6];
+            for (int i = 0; i < orderFields.length; i++) {
+               intOrderFields[i] =  Integer.parseInt(orderFields[i]);
+            }
+
+                    if (orderFields.length == 6) order = new Order(intOrderFields[0], intOrderFields[1], intOrderFields[2],
+                            intOrderFields[3], intOrderFields[4], intOrderFields[5]);
             } else {
                 System.out.println("Неверный формат заявки. Укажите фирму призводителя деталей работа: 'Голова|Тело|"
                         + "Левая рука|Правая рука|Левая нога|Правая нога'" +
-                        "\nПример: 'Samsung|LG|0*|Sony|0*|0*'" + "\n*0 - по умолчанию Китайская 'No_name' фирма.");
+                        "\nКомпании: Default = 0, Sony = 1, LG = 2, Samsung = 3");
             }
             if (order != null) isCorrectOrder = true;
         }
@@ -43,15 +48,10 @@ public class OrderReader {
     private static boolean checkOrderFieldsIsCorrect(String[] orderFields) {
         boolean isCorrect = true;
         if (orderFields.length < 6) isCorrect = false;
-        try {
-            if (orderFields[0].length() == 0) isCorrect = false;
-            if (orderFields[1].length() == 0) isCorrect = false;
-        } catch (NumberFormatException e) {
-            isCorrect = false;
-        } catch (ArrayIndexOutOfBoundsException e) {
-            isCorrect = false;
-        }
+        if (orderFields.length > 6) isCorrect = false;
+            for (String orderField : orderFields) {
+                if (!orderField.equals("0") & !orderField.equals("1") & !orderField.equals("2") & !orderField.equals("3")) isCorrect = false;
+            }
         return isCorrect;
     }
-
 }
