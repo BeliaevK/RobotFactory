@@ -70,7 +70,7 @@ public class Order  {
         this.rightLegDetail = rightLegDetail;
     }
 
-    @Override
+/*    @Override
     public String toString() {
         String headCompany = null;
         String bodyCompany = null;
@@ -136,6 +136,6 @@ public class Order  {
         return "Голова: " + headCompany + ", тело: " + bodyCompany + ", левая рука: " + leftHandCompany +
                 ", правая рука: " + rightHandCompany + ", левая нога: " + leftLegCompany + ", правая нога: " +
                 rightLegCompany;
-    }
+    }*/
 
 }
